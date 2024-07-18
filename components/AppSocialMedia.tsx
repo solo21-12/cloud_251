@@ -3,14 +3,9 @@ import { CiLinkedin } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { social } from '@/types';
 
-type Props = {}
 
-type social = {
-    icon: JSX.Element,
-    link: string
-
-}
 
 const social_media_list: social[] = [
     {
@@ -31,7 +26,7 @@ const social_media_list: social[] = [
     }
 ]
 
-const AppSocialMedia = (props: Props) => {
+const AppSocialMedia = () => {
     return (
         <div>
             {

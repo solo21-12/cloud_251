@@ -1,8 +1,10 @@
+import { deviceIcon_types } from '@/types';
 import React, { useEffect, useState } from 'react';
 import { CiDesktop, CiMobile1 } from "react-icons/ci";
 import { IoIosTabletLandscape } from "react-icons/io";
 
-const deviceIcons = [
+
+const deviceIcons: deviceIcon_types[] = [
     {
         icon: <CiDesktop />,
         name: 'Desktop',
@@ -11,12 +13,12 @@ const deviceIcons = [
     {
         icon: <IoIosTabletLandscape />,
         name: 'Tablet',
-        minWidth: 768 // Minimum width for Tablet
+        minWidth: 768
     },
     {
         icon: <CiMobile1 />,
         name: 'Mobile',
-        minWidth: 0 // Minimum width for Mobile
+        minWidth: 0
     }
 ];
 

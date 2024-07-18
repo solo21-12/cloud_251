@@ -37,7 +37,7 @@ const navbar_items_list: navbar_items[] = [
 ]
 
 export const AppSecondNavBar = (props: Props) => {
-    const [selectedItem, setSelectedItem] = React.useState(2)
+    const [selectedItem, setSelectedItem] = React.useState(1)
     const [dropdownOpen, setDropdownOpen] = React.useState(false)
     const router = useRouter()
 

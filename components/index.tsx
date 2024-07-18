@@ -1,4 +1,4 @@
-export { SessionWrapper } from './SessionWrapper'
+export { SessionWrapper } from './AppSessionWrapper'
 export { AppNavBar } from './AppNavBar'
 export { AppSecondNavBar } from './AppSecondNavBar'
 export { AppProduct } from './AppProduct'

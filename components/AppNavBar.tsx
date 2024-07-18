@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { IoIosMenu } from "react-icons/io";
 import { IoClose } from 'react-icons/io5';
-import ResponsiveIcons from './ResponsiveIcons';
+import ResponsiveIcons from './AppResponsiveIcons';
 import AppSocialMedia from './AppSocialMedia';
 import { navbar_items } from '@/types';
 import Divider from '@mui/material/Divider';
