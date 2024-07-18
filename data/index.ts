@@ -1,7 +1,7 @@
 export const product_cards = [
   "https://verisinvestments.com/storage/uploads/2023/05/346060997_650076296948045_7181771277680153598_n.jpg",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfmKHTkmolOdBWttmijMDdfzPSzS2hihEAGF1uXa5VE-urIUTdAf3VkUboSw40ZY4muMA&usqp=CAU",
-  "https://media.licdn.com/dms/image/C4E22AQH25wr76njxAQ/feedshare-shrink_800/0/1643615471412?e=2147483647&v=beta&t=0NHiq0x7hXrE_m2e7pMIrY_jjpXk6Ab3vTir8CmWVvY",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlLSkV8TcUIsJ5ntRa4s1DWyGShqIg9-8ABS1l3D5s19h7NaJd1ZrlIoBeT0TiJ5iw6A&usqp=CAU",
 ];
 
 export const stories = [
