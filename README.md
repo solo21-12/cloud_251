@@ -1,4 +1,4 @@
-🌟 Cloud 251 Test Project 🌟
+**🌟 Cloud 251 Test Project 🌟
 
 Welcome to the **Cloud 251 Test Project**, crafted with the powerful **Next.js 14** framework. This project showcases a dynamic social feed and a comprehensive product list, all wrapped up with Google authentication for a seamless user experience.
 
