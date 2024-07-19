@@ -46,12 +46,10 @@ export const AppNavBar = ({ children }: { children: React.ReactNode }) => {
     const [isMobileView, setIsMobileView] = useState(false);
     const { data: session } = useSession()
 
-
     useEffect(() => {
         const handleResize = () => setIsMobileView(window.innerWidth < 768);
-        handleResize(); // Initial check
+        handleResize();
         window.addEventListener('resize', handleResize);
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
@@ -62,18 +60,17 @@ export const AppNavBar = ({ children }: { children: React.ReactNode }) => {
     return (
         <div className='flex flex-col'>
             <div >
-
                 <div className='md:flex justify-between my-5 px-10 items-center  hidden'>
                     <div className=' text-2xl lg:text-4xl text-yellow-400 font-bold'>logo</div>
                     <div >
-                        {navBar_items.map((item, index) => (
+                        {session && navBar_items.map((item, index) => (
                             <a key={index} href={item.link} className='m-3 hover:text-yellow-400 cursor-pointer hover:font-bold text-gray-600 xl:text-xl'>{item.name}</a>
                         ))}
 
                     </div>
                     <div className='flex items-center align-middle justify-between'>
                         <ResponsiveIcons />
-                        {/* <Divider orientation="vertical" flexItem /> */}
+                        <Divider orientation="vertical" flexItem />
                         <div className='text-gray-700 hover:text-yellow-400 cursor-pointer mx-3'>
 
                             {session ? (
@@ -97,7 +94,7 @@ export const AppNavBar = ({ children }: { children: React.ReactNode }) => {
 
                     <div className=' flex justify-between items-center gap-2'>
                         <ResponsiveIcons />
-                        {/* <Divider orientation="vertical" flexItem className=' h-10' /> */}
+                        <Divider orientation="vertical" flexItem className=' h-10' />
                         <IoIosMenu className='text-3xl cursor-pointer' onClick={toggleMenu} />
                         <div className='text-gray-700 hover:text-yellow-400 cursor-pointer ml-3'>
                             {session ? (
@@ -114,7 +111,7 @@ export const AppNavBar = ({ children }: { children: React.ReactNode }) => {
                     </div>
                 </div>
             </div>
-            {isMobileView && isMenuOpen && (
+            {session && isMobileView && isMenuOpen && (
                 <div className='fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col items-center justify-center'>
                     <IoClose className='absolute top-5 right-5 text-3xl cursor-pointer' onClick={toggleMenu} />
                     {navBar_items.map((item, index) => (
